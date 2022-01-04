@@ -1,0 +1,49 @@
+<div class="statistics-page">
+  <h1>Statistics:</h1>
+  <!-- <LineChart *ngIf="data" width={{600}} height={{300}} data={{data}}>
+    <Line type="monotone" dataKey="uv" stroke="#8884d8"></Line>
+    <CartesianGrid stroke="#ccc"></CartesianGrid>
+    <XAxis dataKey="name"></XAxis>
+    <YAxis></YAxis>
+  </LineChart>
+  <h2>The average block size in MB</h2>
+  <LineChart *ngIf="data2" width={{600}} height={{300}} data={data2}>
+    <Line type="monotone" dataKey="uv" stroke="#8d5"></Line>
+    <CartesianGrid stroke="#ccc"></CartesianGrid>
+    <XAxis dataKey="name"></XAxis>
+    <YAxis></YAxis>
+  </LineChart> -->
+
+  <!-- <div class='chart-box'>
+
+    <Line class='chart' [options]=options1 [data]=data1 />;
+    <Line class='chart' [options]=options2 [data]=data2 />;
+  </div> -->
+
+  <!-- <google-chart [type]="chartData.type" [data]="chartData.data" [columns]="chartData.columnNames"
+    [options]="chartData.options" [width]="chartData.width" [height]="chartData.height">
+
+  </google-chart> -->
+
+  <!-- <div id="heatmap-object" style="height: 400px; min-width: 380px"></div> -->
+
+  <!-- <div style="display: block">
+    <canvas mdbChart [chartType]="chartType" [datasets]="chartDatasets" [labels]="chartLabels" [colors]="chartColors"
+      [options]="chartOptions" [legend]="true" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+    </canvas>
+  </div> -->
+
+
+  <!-- <ngx-charts-bubble-chart [view]="view" [scheme]="colorScheme" [results]="bubbleData" [xAxis]="showXAxis"
+    [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [yScaleMin]="yScaleMin" [yScaleMax]="yScaleMax"
+    [minRadius]="minRadius" [maxRadius]="maxRadius" (select)="onSelect($event)" (activate)="onActivate($event)"
+    (deactivate)="onDeactivate($event)">
+  </ngx-charts-bubble-chart> -->
+
+  <ngx-charts-line-chart *ngIf="multi.length" [view]="view" [scheme]="colorScheme" [legend]="legend"
+    [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+    [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline" [results]="multi"
+    (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+  </ngx-charts-line-chart>
+</div>

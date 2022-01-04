@@ -1,0 +1,11 @@
+<form class="contact-filter">
+  <!-- <input [(ngModel)]="filterBy.term" (ngModelChange)="onSetFilter()" name="term" type="text"
+    placeholder="Search a contact"> -->
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Filter by</mat-label>
+    <input matInput placeholder="Search a contact" [(ngModel)]="filterBy.term" name="term"
+      (ngModelChange)="onSetFilter()">
+  </mat-form-field>
+
+
+</form>

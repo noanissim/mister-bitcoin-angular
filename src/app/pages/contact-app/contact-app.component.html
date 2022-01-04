@@ -1,0 +1,6 @@
+<section class="contact-app container">
+  <contact-filter></contact-filter>
+  <a routerLink="edit"> <button mat-raised-button>Add contact</button></a>
+  <contact-list (onRemove)="onRemoveContact($event)" [contacts]="contacts$|async"></contact-list>
+  <router-outlet></router-outlet>
+</section>

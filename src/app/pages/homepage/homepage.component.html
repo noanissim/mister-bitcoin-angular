@@ -1,0 +1,6 @@
+<div class="homepage">
+  <img src="./assets/img/profile.png" alt="">
+  <h1>Welcome {{user.name}}!</h1>
+  <h2>Coins: {{user.coins}}</h2>
+  <h2 *ngIf="btc">BTC: {{btc|async}}</h2>
+</div>

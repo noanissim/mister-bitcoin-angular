@@ -1,0 +1,35 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/528/952/990/bitcoin-4k-gold-wallpaper-preview.jpg");
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/528/952/990/bitcoin-4k-gold-wallpaper-preview.jpg"),
+    linear-gradient(#ffffff93, #b9b9b9);
+
+  background-image: linear-gradient(
+      45deg,
+      rgba(145, 146, 122, 0.62),
+      rgba(91, 146, 217, 0.58)
+    ),
+    url("https://c4.wallpaperflare.com/wallpaper/528/952/990/bitcoin-4k-gold-wallpaper-preview.jpg");
+
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: white;
+
+  h1,
+  h2 {
+    font-weight: 500;
+    font-size: 3.5em;
+    margin: 10px;
+    // text-shadow: 0px 1px 15px 5px rgba(59, 26, 26, 0.8);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.589);
+  }
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
